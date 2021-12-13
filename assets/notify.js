@@ -175,17 +175,17 @@
 
         const jsonString = JSON.stringify(toSend);
 
-//         $.ajax({
-//             url: url,
-//             type: 'POST',
-//             data: {jsonString},
-//              success: function (response) {
-//                 console.log('Done');
-//              },
-//              error: function (error) {
-//                 console.log(error);
-//              }
-//          });
+        $.ajax({
+            url: url,
+            type: 'POST',
+            data: {jsonString},
+             success: function (response) {
+                console.log('Done');
+             },
+             error: function (error) {
+                console.log(error);
+             }
+         });
 
         return form.submit();
     }
